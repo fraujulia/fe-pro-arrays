@@ -31,7 +31,15 @@ function map(array, callback) {
  Фишка задания сделать свою реализацию, чтобы понять, как он работает под капотом. Для перебора советую использовать for цикл
  Помните, что вы передаете функцию, которая ожидает 3 аргумента, текущий элемент, индекс и сам массив. Автоматическая проверка будет это учитывать.
 */
-function filter(array, callback) {}
+function filter(array, callback) {
+    const newArray = [];
+    for (let i = 0; i < array.length; i++) {
+      if (array[i] > 1) {
+        newArray.push(array[i]);
+      }
+    }
+    return newArray;
+}
 
 /* Функция принимает в себе первым аргументом массив, вторым функцию которая будет вызываться для каждого элемента массива, 3 аргумент изначальный вариант
  вот документация https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce
