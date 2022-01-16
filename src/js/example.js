@@ -1,6 +1,6 @@
 const array = [1, 2, 3];
 
-forEach(array, function (item, index, arr) {
+forEach(array, function (item, index, array) {
   console.log(item, index);
 })
 // 1 0
